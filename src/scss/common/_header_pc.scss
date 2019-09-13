@@ -4,6 +4,28 @@
 @charset "utf-8";
 .header {
   position: relative;
+  .case {
+    display: flex;
+    justify-content: center;
+    a {
+      width: 180px;
+      height: 40px;
+      color: #fff;
+      line-height: rem(40);
+      &:before {
+        border-top: 1px solid #fff;
+        border-right: 1px solid #fff;
+        left: 33px;
+      }
+      &.men {
+        background: #24c6ef;
+
+      }
+      &.women {
+        background: #ff6490;
+      }
+    }
+  }
   .logo {
     padding: 96px 44px 33px 45px;
     a {
@@ -78,20 +100,12 @@
         background-size: contain;
       }
     }
-    .recruit {
+    .mail {
       background: #ededed;
       line-height: rem(53);
-      font-size: rem(16);
-      width: 216px;
       height: 53px;
-      font-weight: bold;
-      padding-left: 30px;
       &:after {
-        width: 25px;
-        height: 16px;
         left: 20px;
-        background: url('../images/mail.png')no-repeat;
-        background-size: contain;
       }
     }
   }
