@@ -3,6 +3,9 @@
 .container {
   min-width: 1280px;
 }
+a {
+  text-decoration: none;
+}
 .row {
   max-width: 1280px;
   width: 100%;
@@ -23,8 +26,31 @@
 //     opacity: 0.8;
 //   }
 // }
-
-h3 {
+.mv {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  .main_ttl {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    h2 {
+      color: #fff;
+      font-size: rem(28);
+      line-height: rem(42);
+      position: relative;
+      &:after {
+        content:"";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+      }
+    }
+  }
+}
+.ttl {
   font-size: rem(20);
   color: #000;
   line-height: rem(30);
@@ -70,6 +96,7 @@ h3 {
   padding: 80px 0;
   ul {
     justify-content: space-between;
+    flex-wrap: wrap;
     li {
       width: 610px;
       figure {

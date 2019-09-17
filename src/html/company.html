@@ -10,15 +10,19 @@
   <body>
     <div class="container">
       <header id="header" class="header flex">
+        <div class="case">
+          <a href="#" class="btn men">男性の方</a>
+          <a href="#" class="btn women">男性の方</a>
+        </div>
         <h1 class="logo"><a href="/"><img src="./images/logo.png" alt="logo"></a></h1>
         <p class="menuIcon"><a class="menu_trigger" href="#" id="js-menuButton"><span></span><span></span><span></span></a></p>
         <nav class="nav" id="js-menu">
           <ul class="flex">
             <li><a href="company.html">ハニーグループについて</a></li>
-            <li><a href="product.html">店舗紹介</a></li>
-            <li><a href="topic.html">募集情報</a></li>
-            <li><a href="artist.html">働く仲間</a></li>
-            <li><a href="artist.html">1日の流れ</a></li>
+            <li><a href="#shop">店舗紹介</a></li>
+            <li><a href="recruit.html">募集情報</a></li>
+            <li><a href="#working">働く仲間</a></li>
+            <li><a href="root">1日の流れ</a></li>
           </ul>
           <div class="header_btn">
             <a href="tel:0120-677-821" class="tel">0120-677-821</a>
@@ -28,16 +32,84 @@
       </header>
       <!-- end header -->
       <main>
-        <div class="mv">
-          <figure>
-            <img src="./images/company.jpg" alt="company">
-          </figure>
-          <div class="text">
-            <p>お客様はもちろんのこと、<br>共に働く従業員の幸せも大事にしたい。</p>
+        <section class="company">
+          <div class="mv">
+            <figure>
+              <img src="./images/company.jpg" alt="company">
+            </figure>
+            <div class="main_ttl"><h2>お客様はもちろんのこと、<br>共に働く従業員の幸せも大事にしたい。</h2></div>
           </div>
-        </div>
-        <section class="subpage">
+          <div class="row">
+            <article class="block">
+              <h3>代表者挨拶<span>Greeting</span></h3>
+              <figure><img src="./images/greeting_img.jpg" alt="greeting"></figure>
+              <div class="block_txt">
+                <h4>全ての人々を幸せにすること、全ての人々から愛される経営。</h4>
+                <p>私たちはお客様の人生の１シーンに感動を創り出す担い手です。お客様にとって大切な思い出と、幸せな時間になるように
+                  業界トップレベルのサービスをご提供しています。しかし、同時にサービースを提供するスタッフが幸せであること、共に働く
+                  従業員が幸せでなくてはなりません。
+                  私たち「アリスグループ」は、働き手の幸せがあって始めて、お客様に幸せをご提供できると考えています。
+                  お客様に愛される会社でありたい。
+                  従業員に愛される会社でありたい。
 
+                  私たちにかかわる全ての人々を幸せにできる会社でありたいと思っています。</p>
+              </div>
+            </article>
+            <article class="block">
+              <h3>代表者挨拶<span>Promises</span></h3>
+              <figure><img src="./images/promise_img.jpg" alt="promise"></figure>
+              <div class="block_txt">
+                <h4>社員全員の笑顔のために<br />私たちアリスグループからの約束</h4>
+                <p>アリスグループは反社会勢力とは無関係の会社です。多くのお客様に長く愛されるよう、風俗営業許可書を取得し、法律遵
+                  守のもと、健全な店舗運営を行っています。
+                  また、従業員全員が安心して働ける環境を作るため、従業員、女性スタッフにおいても風営法で定められている入店時の必
+                  要書類に必ず写真付き身分証（免許証or住基カード）+本籍地記載の住民票もしくはパスポートを提出していただいており
+                  ます。そのため、身元がしっかりとしている方のみ勤務していただいているので、ご安心ください。
+
+                  職場環境においては、役職、年齢に関係なくお互いに敬意を持って接しています。
+                  恫喝・パワハラなどは一切ありません。また、罰金・ノルマといったペナルティもありません。
+
+                  社員全員が安心して働けるよう、お約束します。</p>
+              </div>
+            </article>
+            <article class="block">
+              <h3>充実の福利厚生<span>Employee Benefits</span></h3>
+              <figure><img src="./images/benifit_img.jpg" alt="promise"></figure>
+              <div class="block_txt">
+                <h4>充実した福利厚生でみなさんをサポート</h4>
+                <dl>
+                  <dt>休日</dt>
+                  <dd>隔週２日休みの月６日休み、有給休暇年間６日〜、誕生日休暇、その他慶弔休暇、
+                  夏、冬の大型連休取得可能</dd>
+                </dl>
+                <dl>
+                  <dt>交通費</dt>
+                  <dd>通勤の方は、月30,000円まで交通費を支給いたします。</dd>
+                </dl>
+                <dl>
+                  <dt>日払い</dt>
+                  <dd>全職種、１日あたり5,000円の日払いが可能です。</dd>
+                </dl>
+                <dl>
+                  <dt>歩合制</dt>
+                  <dd>毎月の固定給とは別に売上を達成した場合、お支払いしています。</dd>
+                </dl>
+                <dl>
+                  <dt>社会保険</dt>
+                  <dd>健康・労災・厚生年金等の各種保険を完備しています。</dd>
+                </dl>
+                <dl>
+                  <dt>社員寮</dt>
+                  <dd>新宿店、目黒店共に、マンション社宅をご用意しております。<br />
+                    敷金、礼金、保証金、家賃が無料なので、遠方からの方もすぐにご利用いただけます。</dd>
+                </dl>
+              </div>
+            </article>
+            <div class="recruit_btn flex">
+              <a href="tel:0120-677-821" class="tel">0120-677-821</a>
+              <a href="/" class="mail">求人に応募する</a>
+            </div>
+          </div>
         </section>
       </main>
       <!-- end main -->

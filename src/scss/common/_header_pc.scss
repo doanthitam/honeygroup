@@ -6,7 +6,10 @@
   position: relative;
   .case {
     display: flex;
-    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
     a {
       width: 180px;
       height: 40px;

@@ -1,0 +1,63 @@
+@charset "utf-8";
+.sc_qa {
+  .main_ttl {
+    h2 {
+      position: relative;
+      padding-left: 60px;
+      &:after {
+        content:"";
+        position: absolute;
+        background: url('../images/qa_icon.png');
+        background-size: contain;
+        width: 45px;
+        height: 45px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+      }
+    }
+  }
+  dl {
+    margin-bottom: 30px;
+    dt, dd {
+      font-size: rem(16);
+      line-height: rem(26);
+      padding: 10px 0;
+      text-align: justify;
+    }
+    dt {
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        background: #000;
+        border-radius: 50%;
+        width: 28px;
+        height: 28px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+      }
+      &:after {
+        content: "";
+        background: url('../images/close.png') no-repeat;
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        right: 6px;
+        top: 8px;
+        background-size: contain;
+      }
+      &.active {
+        &:after {
+          background: url('../images/open.png') no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+    dd {
+      color: #f06464;
+      display: none;
+    }
+  }
+}

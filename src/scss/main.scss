@@ -23,6 +23,8 @@ html {
 @media screen and (min-width: 768px), print {
   @import "page/top_pc";
   @import "page/company_pc";
+  @import "page/recruit_pc";
+  @import "page/qa_pc";
   @import "common/header_pc";
   @import "common/footer_pc";
   @import "common/common_pc";
@@ -30,6 +32,7 @@ html {
 @media screen and (max-width: 768px) {
   @import "page/top_sp";
   @import "page/company_sp";
+  // @import "page/recruit_sp";
   @import "common/header_sp";
   @import "common/footer_sp";
   @import "common/common_sp";
