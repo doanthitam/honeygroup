@@ -1,6 +1,18 @@
 $(window).on('resize',function(){
-  // resize();
-})
+});
+resize();
+function resize() {
+  if ($(window).width() <= 768) {
+    $('.resimg').each(function(index,el) {
+      $(el).attr('src', $(el).attr('src').replace('pc', 'sp'));
+    });
+  }
+  else {
+    $('.resimg').each(function(index,el) {
+      $(el).attr('src', $(el).attr('src').replace('sp', 'pc'));
+    });
+  }
+}
 
 $("#js-menuButton").on("click", function() {
  $(this).toggleClass("active");

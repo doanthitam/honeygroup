@@ -17,6 +17,9 @@
       }
     }
   }
+  .fag {
+    padding: 80px 0;
+  }
   dl {
     margin-bottom: 30px;
     dt, dd {
@@ -44,14 +47,16 @@
         width: 15px;
         height: 15px;
         position: absolute;
+        top: 50%;
         right: 6px;
-        top: 8px;
+        transform: translateY(-50%);
         background-size: contain;
       }
       &.active {
         &:after {
           background: url('../images/open.png') no-repeat;
           background-size: contain;
+          top: 29px;
         }
       }
     }
