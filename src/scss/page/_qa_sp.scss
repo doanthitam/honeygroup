@@ -1,0 +1,65 @@
+@charset "utf-8";
+.sc_qa {
+  .main_ttl {
+    width: vw(580) !important;
+    h2 {
+      padding-left: vw(70);
+      &:after {
+        background: url('../images/qa_icon.png')no-repeat;
+        background-size: contain;
+        width: vw(60);
+        height: vw(48);
+      }
+    }
+  }
+  .faq {
+    padding: vw(100) vw(20);
+  }
+  dl {
+    margin-bottom: vw(60);
+    dt, dd {
+      font-size: rem2(30);
+      line-height: vw(42);
+      padding: vw(20) 0 vw(20) 0;
+      text-align: justify;
+    }
+    dt {
+      position: relative;
+      padding-right: vw(70);
+      &:before {
+        content: "";
+        position: absolute;
+        background: #000;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+      }
+      &:after {
+        content: "";
+        background: url('../images/close.png') no-repeat;
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        top: 50%;
+        right: 7.5px;
+        transform: translateY(-50%);
+        background-size: contain;
+      }
+      &.active {
+        &:after {
+          background: url('../images/open.png') no-repeat;
+          background-size: contain;
+          top: 50%;
+          transform: translateY(0);
+        }
+      }
+    }
+    dd {
+      color: #f06464;
+      display: none;
+    }
+  }
+}

@@ -16,8 +16,9 @@
     h2 {
       color: #fff;
       font-size: rem2(36);
-      line-height: vw(70);
+      line-height: vw(48);
       position: relative;
+      text-align: center;
       &:after {
         content:"";
         position: absolute;
@@ -40,6 +41,7 @@
     color:#24c6ef;
     margin-left: vw(30);
     font-size: rem2(30);
+    font-family: "Ubuntu";
   }
 }
 h3 {
@@ -48,7 +50,6 @@ h3 {
   color: #000;
   line-height: vw(26);
   margin-bottom: vw(70);
-  font-family: 'Roboto';
 }
 p {
   color: #000;
@@ -140,6 +141,7 @@ a {
   background: #24c6ef;
   justify-content: space-between;
   display: flex;
+  align-items: center;
   margin: vw(60) auto 0;
   .tel {
     font-size: rem2(44);
@@ -149,8 +151,11 @@ a {
     font-size: "Roboto";
   }
   .mail {
-    margin: 20px vw(20) 0 0;
+    margin: 0 vw(20) 0 0;
     width: vw(300);
+    &:after {
+      top: vw(40);
+    }
   }
 }
 .mail {

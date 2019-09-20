@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ja">
+  <head>
+    <meta charset="utf-8"/>
+    <title>animoproduce</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="./css/main.css"/>
+  <body>
+    <div class="container">
+      <header id="header" class="header flex">
+        <div class="case">
+          <a href="#" class="btn men">男性の方</a>
+          <a href="#" class="btn women">男性の方</a>
+        </div>
+        <h1 class="logo"><a href="/"><img src="./images/logo.png" alt="logo"></a></h1>
+        <p class="menuIcon"><a class="menu_trigger" href="#" id="js-menuButton"><span></span><span></span><span></span></a></p>
+        <nav class="nav" id="js-menu">
+          <ul class="flex">
+            <li><a href="company.html">ハニーグループについて</a></li>
+            <li><a href="#shop">店舗紹介</a></li>
+            <li><a href="recruit.html">募集情報</a></li>
+            <li><a href="working">働く仲間</a></li>
+            <li><a href="root">1日の流れ</a></li>
+          </ul>
+          <div class="header_btn">
+            <a href="tel:0120-677-821" class="tel">0120-677-821</a>
+            <a href="/" class="mail">求人に応募する</a>
+          </div>
+        </nav>
+      </header>
+      <!-- end header -->
+      <main>
+        <section class="sc_recruit">
+          <div class="mv">
+            <figure>
+              <img src="./images/company.jpg" alt="company">
+            </figure>
+            <div class="main_ttl"><h2>求人情報</h2></div>
+          </div>
+          <div class="row">
+            <div class="sc_recruit_detail row">
+              <ul class="flex">
+                <li><a href="#">トップページ</a></li>
+                <li><a href="#">求人情報</a></li>
+                <li><a href="#">募集フォーム</a></li>
+              </ul>
+              <form action="">
+                <div class="input_form">
+                  <div class="row_form">
+                    <label class="arrow">名前<em>※</em></label>
+                    <div class="wrap">
+                      <input type="text" placeholder="例）日本　太郎" type="text" id="ContactName" required="required">
+                    </div>
+                  </div>
+                  <div class="row_form">
+                    <label class="arrow">フリガナ<em>※</em></label>
+                    <div class="wrap">
+                      <input type="text" placeholder="ニホン　タロウ" type="text" id="ContactName" required="required">
+                    </div>
+                  </div>
+                  <div class="row_form">
+                    <label class="arrow">性別<em>※</em></label>
+                    <div class="wrap">
+                      <ul class="block_radio">
+                        <li>
+                          <div class="radio">
+                            <label for="men">男性</label>
+                            <input type="radio" id="men" name="backdoc" value="men">
+                          </div>
+                        </li>
+                        <li>
+                          <div class="radio">
+                            <label for="women">女性</label>
+                            <input type="radio" id="women" name="backdoc" value="women">
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <ul class="error_area"></ul>
+                  </div>
+                  <div class="row_form">
+                    <label class="arrow">ご連絡先電話番号<em>※</em></label>
+                    <div class="wrap">
+                      <input type="text" name="txt" id="PartName"  value="">
+                    </div>
+                  </div>
+                  <div class="row_form">
+                    <label class="arrow">メールアドレス<em>※</em></label>
+                    <div class="wrap">
+                      <input type="text" name="txt" id="PartName"  value="">
+                    </div>
+                  </div>
+                  <div class="row_form">
+                    <label class="arrow">メールアドレス(確認)<em>※</em></label>
+                    <div class="wrap">
+                      <div class="wrap">
+                        <input type="text" name="txt" id="PartName"  value="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row_form">
+                    <label class="arrow">募集職種<em>※</em></label>
+                    <div class="wrap">
+                      <select name="slct" id="slct">
+                        <option selected disabled>---選択してください---</option>
+                        <option value="1">店長・幹部候補</option>
+                        <option value="2">WEBデザイナー</option>
+                        <option value="3">ホール・接客スタッフ</option>
+                        <option value="4">カメラマン・フォトグラファー</option>
+                        <option value="5">その他</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row_form">
+                    <label class="arrow">自分PR<em>※</em></label>
+                    <div class="wrap">
+                      <textarea name="kind_text" class="area_01"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn" type="button" name="button">送信</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- end main -->
+      <footer>
+        <ul class="row flex">
+          <li><a href="#">アリスグループについて</a></li>
+          <li><a href="#">募集情報</a></li>
+          <li><a href="#">働く仲間</a></li>
+          <li><a href="#">1日の流れ</a></li>
+          <li><a href="#">店舗紹介</a></li>
+          <li><a href="#">よくある質問Q & A</a></li>
+          <li><a href="#">女性の求人</a></li>
+          <li><a href="#">個人情報取り扱いについて</a></li>
+        </ul>
+        <h1 class="logo_foo"><a href="/"><img src="./images/logo_foo.png" alt="alice group"></a></h1>
+        <small>&copy;Arice Group 2019</small>
+      </footer>
+      <!-- end footer -->
+    </div>
+    <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script> -->
+    <!-- <script type="text/javascript" src="./js/lib.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script> -->
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
+</html>

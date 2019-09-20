@@ -2,7 +2,7 @@
 .toppage {
   padding: 0 vw(20);
   .philosophy {
-    padding: vw(100) 0;
+    padding: vw(100) 0 0;
     h3 {
       font-size: rem2(40);
       line-height: vw(54);
@@ -18,7 +18,7 @@
       margin-bottom: vw(50);
       span {
         color: #24c6ef;
-        font-family: "Roboto";
+        font-family: "Ubuntu";
         font-size: rem2(40);
         line-height: vw(54);
       }
@@ -59,7 +59,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             color: #000;
-            font-family: "Roboto";
+            font-family: "Ubuntu";
           }
         }
         p {
@@ -71,7 +71,7 @@
     }
   }
   .working {
-    padding-bottom: vw(60);
+    padding-bottom: vw(100);
     h3 {
       margin-bottom: vw(30);
     }
@@ -120,7 +120,7 @@
     }
   }
   .qa {
-    padding-bottom: vw(60);
+    padding-bottom: vw(100);
     &_inner {
       background: #f1f1f1;
       padding: vw(50) 0;
@@ -151,25 +151,26 @@
     }
   }
   .schedule {
+    padding-bottom: vw(100);
     &_bg {
       background: #f1f1f1;
-      padding: vw(50) 0;
+      padding: vw(50) vw(20);
     }
     &_top {
       display: flex;
       figure {
         background: #fff;
-        width: vw(200);
-        padding: vw(30) 0 vw(20);
+        width: vw(180);
+        padding: vw(25) 0 vw(50);
         img {
-          width: 50px;
+          width: vw(70);
           margin: 0 auto;
           display: block;
         }
       }
       p {
-        width: calc(100% - 200px);
-        padding: vw(73) 0 0 vw(80);
+        width: vw(587);
+        padding: vw(45) 0 vw(45) vw(40);
         font-size: rem2(28);
         line-height: vw(40);
         font-weight: bold;
@@ -178,7 +179,6 @@
     &_root {
       dl {
         display: flex;
-        align-items: center;
         // &:after {
         //   content: "";
         //   display: block;
@@ -186,19 +186,28 @@
         // }
         dt {
           background: #fff;
-          padding: 30px 0;
-          width: vw(200);
+          width: vw(180);
           font-size: rem(20);
           line-height: rem(30);
           font-weight: bold;
-          font-family: "Roboto";
+          font-family: "Ubuntu";
           text-align: center;
         }
         dd {
-          width: calc(100% - 200px);
+          width: vw(587);
           font-size: rem2(28);
           line-height: vw(40);
+          padding: 0 0 vw(40) vw(35);
+
         }
+      }
+    }
+  }
+  .shop {
+    ul {
+      li {
+        width: vw(560);
+        margin: vw(30) auto;
       }
     }
   }

@@ -26,12 +26,19 @@ html {
   @import "common/header_pc";
   @import "common/footer_pc";
   @import "common/common_pc";
+  .show_sp {
+    display: none !important;
+  }
 }
 @media screen and (max-width: 768px) {
   @import "page/top_sp";
   @import "page/company_sp";
+  @import "page/qa_sp";
+  @import "page/recruit_sp";
   @import "common/header_sp";
   @import "common/footer_sp";
   @import "common/common_sp";
-
+  .show_pc {
+    display: none !important;
+  }
 }

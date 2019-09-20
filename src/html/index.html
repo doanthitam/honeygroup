@@ -7,7 +7,7 @@
     <meta name="keywords" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" type="text/css" href="./css/main.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
   <body>
     <div id="loadingAnim" class="loadingAnim">
       <i class="loadingAnim_line"></i>
@@ -28,7 +28,12 @@
             <li><a href="artist.html">働く仲間</a></li>
             <li><a href="artist.html">1日の流れ</a></li>
           </ul>
-          <div class="header_btn">
+          <ul class="row flex show_sp">
+            <li><a href="#">よくある質問Q & A</a></li>
+            <li><a href="#">女性の求人</a></li>
+            <li><a href="#">個人情報取り扱いについて</a></li>
+          </ul>
+          <div class="header_btn show_pc">
             <a href="tel:0120-677-821" class="tel">0120-677-821</a>
             <a href="/" class="mail">求人に応募する</a>
           </div>
@@ -210,10 +215,10 @@
           <article class="shop">
             <h3 class="ttl row">店舗情報<span>Shop</span></h3>
             <ul class="row">
-              <li><img src="./images/shop_01.png" alt="shop"></li>
-              <li><img src="./images/shop_02.png" alt="shop"></li>
+              <li><a href="#"><img src="./images/shop_01.png" alt="shop"></a></li>
+              <li><a href="#"><img src="./images/shop_02.png" alt="shop"></a></li>
             </ul>
-            <div class="recruit_btn flex">
+            <div class="recruit_btn flex show_pc">
               <a href="tel:0120-677-821" class="tel">0120-677-821</a>
               <a href="/" class="mail">求人に応募する</a>
             </div>
@@ -222,7 +227,7 @@
       </main>
       <!-- end main -->
       <footer>
-        <ul class="row flex">
+        <ul class="row flex show_pc">
           <li><a href="#">アリスグループについて</a></li>
           <li><a href="#">募集情報</a></li>
           <li><a href="#">働く仲間</a></li>
@@ -232,8 +237,12 @@
           <li><a href="#">女性の求人</a></li>
           <li><a href="#">個人情報取り扱いについて</a></li>
         </ul>
-        <h1 class="logo_foo"><a href="/"><img src="./images/logo_foo.png" alt="alice group"></a></h1>
-        <small>&copy;Arice Group 2019</small>
+        <h1 class="logo_foo show_pc"><a href="/"><img src="./images/logo_foo.png" alt="alice group"></a></h1>
+        <small class="show_pc">&copy;Arice Group 2019</small>
+        <div class="recruit_btn show_sp">
+          <a href="tel:0120-677-821" class="tel">0120-677-821</a>
+          <a href="/" class="mail">求人に応募する</a>
+        </div>
       </footer>
       <!-- end footer -->
     </div>

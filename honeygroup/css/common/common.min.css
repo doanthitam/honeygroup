@@ -1,0 +1,1 @@
+body,input,td,textarea,th{font-family:YuGothic}img{width:100%}.target{transition:all .8s cubic-bezier(.165,.84,.44,1);transform:translate(0,20px);opacity:0}.target.action{transform:translate(0,0);transition:all .8s cubic-bezier(.165,.84,.44,1);opacity:1}

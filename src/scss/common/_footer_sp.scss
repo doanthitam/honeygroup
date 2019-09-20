@@ -1,17 +1,35 @@
 @charset "utf-8";
+
 footer {
-  background: #e72e0d;
-  padding: vw(70) 0 vw(100);
-  ul {
-    display: flex;
-    justify-content: center;
-    li {
-      width: vw(70);
-      margin: 0 vw(40);
-      a {
-        transition: .3s ease-out;
-        &:hover {
-          opacity: 0.8;
+  .recruit_btn {
+    padding: vw(110) 0;
+    position: relative;
+    a {
+      &:after {
+        content: "";
+        position: absolute;
+      }
+      &.tel {
+        font-size: rem2(50);
+        font-weight: bold;
+        padding-left: vw(60);
+        line-height: vw(62);
+        &:after {
+          width: vw(42);
+          height: vw(51);
+          top: vw(85);
+          left: vw(10);
+          background: url('../images/phone_icon_foo.png')no-repeat;
+          background-size: contain;
+        }
+      }
+      &.mail {
+        background: #ededed;
+        line-height: vw(80);
+        height: vw(80);
+        &:after {
+          left: vw(30);
+          top: vw(50);
         }
       }
     }

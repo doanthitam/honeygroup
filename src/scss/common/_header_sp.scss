@@ -15,6 +15,7 @@
       line-height: vw(85);
       font-size: rem2(28);
       text-align: center;
+      margin-top: 0;
       &:before {
         border-top: 1px solid #fff;
         border-right: 1px solid #fff;
@@ -83,5 +84,20 @@
   }
   .nav {
     display: none;
+    border: 2px solid #24c6ef;
+    height: 100vh;
+    padding: vw(60) 0;
+    ul {
+      li {
+        margin-bottom: vw(50);
+        padding-bottom: vw(50);
+        text-align: center;
+        a {
+          font-size: rem2(30);
+          line-height: vw(42);
+          color: #000;
+        }
+      }
+    }
   }
 }
