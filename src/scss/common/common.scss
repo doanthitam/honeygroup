@@ -10,13 +10,120 @@ img {
   width: 100%;
 }
 
-.target {
-	transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
-	transform: translate(0,20px);
-	opacity: 0;
-  &.action {
-  	transform: translate(0,0);
-  	transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
-  	opacity: 1;
-  }
-}
+// .loadingAnim{
+//     position: fixed;
+//     z-index: 100;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+//     display: block;
+//     width: 100%;
+//     height: 100%;
+//     text-align: center;
+//     &:before,
+//     &:after{
+//       line-height: 1;
+//       position: fixed;
+//       z-index: 99;
+//       right: 0;
+//       left: 0;
+//       display: block;
+//       width: 100%;
+//       height: 50%;
+//       margin-right: auto;
+//       margin-left: auto;
+//       content: ' ';
+//       transition: all .3s cubic-bezier(.785, .135, .15, .86) 0s;
+//       transition-delay: .3s;
+//       background-color: #10aad1;
+//     }
+//     &:before{
+//       top: 0;
+//     }
+//     &:after{
+//       bottom: 0;
+//     }
+// }
+//
+// .loaded{
+//   .loadingAnim {
+//     &:before{
+//         height: 0;
+//         transform: translateY(-1%);
+//     }
+//     &:after{
+//         height: 0;;
+//         transform: translateY(1%);
+//     }
+//   }
+// }
+//
+// .loadingAnim_line{
+//     line-height: 1;
+//     position: fixed;
+//     z-index: 100;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+//     display: inline-block;
+//     overflow: hidden;
+//     width: 400px;
+//     height: 50px;
+//     margin: auto;
+//     transition: all .3s cubic-bezier(.785, .135, .15, .86) 0s;
+//     transition-delay: .6s;
+//     text-align: center;
+//     &:after{
+//         position: absolute;
+//         z-index: 100;
+//         top: 0;
+//         bottom: 0;
+//         left: 0;
+//         display: block;
+//         width: 0;
+//         height: 100%;
+//         margin: auto  auto auto 0;
+//         content: ' ';
+//         animation: loadingAnim 2s ease-in-out .1s infinite normal backwards;
+//         background-color: #fff;
+//         will-change: transform, width;
+//     }
+//     &:before{
+//         font-family: "Ubuntu";
+//         font-size: rem(30);
+//         font-weight: bold;
+//         font-style: normal;
+//         line-height: 1;
+//         display: block;
+//         content: 'Alice Group';
+//         animation: loadingAnim_text 1.5s ease .15s infinite alternate both;
+//         // letter-spacing: .5em;
+//         color: #fff;
+//         will-change: opacity;
+//     }
+//   }
+//
+// .loaded {
+//   .loadingAnim_line{
+//     overflow: hidden;
+//     height: 0;
+//     &:after, &:before{
+//       animation: none;
+//     }
+//     // &:before {
+//     //   content: 'LOADED!';
+//     // }
+//   }
+// }
+// .target {
+// 	transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+// 	transform: translate(0,20px);
+// 	opacity: 0;
+//   &.action {
+//   	transform: translate(0,0);
+//   	transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+//   	opacity: 1;
+//   }
+// }

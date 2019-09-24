@@ -1,4 +1,7 @@
 @charset "utf-8";
+.ttl_top {
+  top: vw(450) !important;
+}
 .toppage {
   padding: 0 vw(20);
   .philosophy {
@@ -71,7 +74,7 @@
     }
   }
   .working {
-    padding-bottom: vw(100);
+    padding: vw(100) 0;
     h3 {
       margin-bottom: vw(30);
     }
@@ -120,7 +123,6 @@
     }
   }
   .qa {
-    padding-bottom: vw(100);
     &_inner {
       background: #f1f1f1;
       padding: vw(50) 0;
@@ -151,7 +153,7 @@
     }
   }
   .schedule {
-    padding-bottom: vw(100);
+    padding: vw(100) 0 0;
     &_bg {
       background: #f1f1f1;
       padding: vw(50) vw(20);
@@ -204,6 +206,7 @@
     }
   }
   .shop {
+    padding-top: vw(100);
     ul {
       li {
         width: vw(560);

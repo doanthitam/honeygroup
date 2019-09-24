@@ -1,45 +1,21 @@
 
 .header {
-  position: relative;
-  .case {
-    display: flex;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
-    a {
-      display: block;
-      width: vw(260);
-      height: vw(85);
-      color: #fff;
-      line-height: vw(85);
-      font-size: rem2(28);
-      text-align: center;
-      margin-top: 0;
-      &:before {
-        border-top: 1px solid #fff;
-        border-right: 1px solid #fff;
-        left: vw(50);
-      }
-      &.men {
-        background: #24c6ef;
-
-      }
-      &.women {
-        background: #ff6490;
-      }
-    }
-  }
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background: #fff;
   h1 {
     width: vw(250);
-    padding: vw(120) 0 vw(30) vw(30);
+    padding: vw(35) 0 vw(30) vw(30);
     a {
       font-size: 0;
     }
   }
   .menuIcon {
     position: absolute;
-    top: vw(120);
+    top: vw(30);
     right: vw(28);
     .menu_trigger {
       display: inline-block;
@@ -69,12 +45,12 @@
         width: 100%;
         background-color: #24c6ef;
         border-radius: vw(8);
-        height: 2px;
+        height: vw(4);
         &:nth-of-type(1) {
           top: 0;
         }
         &:nth-of-type(2) {
-          top: 10px;
+          top: vw(18);
         }
         &:nth-of-type(3) {
           bottom: 0;
@@ -84,18 +60,57 @@
   }
   .nav {
     display: none;
-    border: 2px solid #24c6ef;
     height: 100vh;
     padding: vw(60) 0;
+    overflow-y: scroll;
     ul {
+      padding: 0 vw(180);
       li {
         margin-bottom: vw(50);
-        padding-bottom: vw(50);
-        text-align: center;
         a {
-          font-size: rem2(30);
-          line-height: vw(42);
+          font-size: rem2(28);
+          line-height: vw(40);
           color: #000;
+          position: relative;
+          padding-left: vw(50);
+          &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: vw(6);
+             width: vw(15);
+             height: vw(14);
+             border-top: 1px solid #000;
+             border-right: 1px solid #000;
+             -webkit-transform: rotate(45deg);
+             transform: rotate(45deg);
+          }
+        }
+      }
+    }
+    .case {
+      margin-top: vw(50);
+      display: flex;
+      a {
+        display: block;
+        width: vw(300);
+        height: vw(85);
+        color: #fff;
+        line-height: vw(85);
+        font-size: rem2(28);
+        text-align: center;
+        margin-top: 0;
+        &:before {
+          border-top: 1px solid #fff;
+          border-right: 1px solid #fff;
+          left: vw(50);
+        }
+        &.men {
+          background: #24c6ef;
+
+        }
+        &.women {
+          background: #ff6490;
         }
       }
     }

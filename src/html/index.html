@@ -9,12 +9,12 @@
     <link rel="stylesheet" type="text/css" href="./css/main.css"/>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
   <body>
-    <div id="loadingAnim" class="loadingAnim">
+    <!-- <div id="loadingAnim" class="loadingAnim">
       <i class="loadingAnim_line"></i>
-    </div>
+    </div> -->
     <div class="container">
       <header id="header" class="header flex">
-        <div class="case">
+        <div class="case show_pc">
           <a href="#" class="btn men">男性の方</a>
           <a href="#" class="btn women">男性の方</a>
         </div>
@@ -23,19 +23,23 @@
         <nav class="nav" id="js-menu">
           <ul class="flex">
             <li><a href="company.html">ハニーグループについて</a></li>
-            <li><a href="product.html">店舗紹介</a></li>
-            <li><a href="topic.html">募集情報</a></li>
-            <li><a href="artist.html">働く仲間</a></li>
-            <li><a href="artist.html">1日の流れ</a></li>
+            <li><a href="#shop">店舗紹介</a></li>
+            <li><a href="recruit.html">募集情報</a></li>
+            <li><a href="#working">働く仲間</a></li>
+            <li><a href="#root">1日の流れ</a></li>
           </ul>
           <ul class="row flex show_sp">
-            <li><a href="#">よくある質問Q & A</a></li>
+            <li><a href="qa.html">よくある質問Q & A</a></li>
             <li><a href="#">女性の求人</a></li>
             <li><a href="#">個人情報取り扱いについて</a></li>
           </ul>
           <div class="header_btn show_pc">
             <a href="tel:0120-677-821" class="tel">0120-677-821</a>
-            <a href="/" class="mail">求人に応募する</a>
+            <a href="entry_form.html" class="mail">求人に応募する</a>
+          </div>
+          <div class="case show_sp">
+            <a href="#" class="btn men">男性の方</a>
+            <a href="#" class="btn women">男性の方</a>
           </div>
         </nav>
       </header>
@@ -47,7 +51,7 @@
             <li><img src="./images/mv_pc.jpg" class="resimg" alt="animoproduce"></li>
             <li><img src="./images/mv_pc.jpg" class="resimg" alt="animoproduce"></li>
           </ul>
-          <div class="main_ttl"><h2>全国トップクラスの人気グループ。<br />業界最高クラスの待遇でお待ちしております。</h2></div>
+          <div class="main_ttl ttl_top"><h2>全国トップクラスの人気グループ。<br />業界最高クラスの待遇でお待ちしております。</h2></div>
         </div>
         <section class="toppage">
           <article class="philosophy">
@@ -112,10 +116,10 @@
             <a class="btn more" href="#">一覧はこちら</a>
             <div class="recruit_btn flex">
               <a href="tel:0120-677-821" class="tel">0120-677-821</a>
-              <a href="/" class="mail">求人に応募する</a>
+              <a href="entry_form.html" class="mail">求人に応募する</a>
             </div>
           </article>
-          <article class="working">
+          <article class="working" id="working">
             <h3 class="ttl row">働く仲間<span>Working Staff</span></h3>
             <figure><img src="./images/working_staff.jpg" alt="working_staff"></figure>
             <div class="row working_staff">
@@ -138,7 +142,7 @@
             </div>
             <div class="recruit_btn flex">
               <a href="tel:0120-677-821" class="tel">0120-677-821</a>
-              <a href="/" class="mail">求人に応募する</a>
+              <a href="entry_form.html" class="mail">求人に応募する</a>
             </div>
           </article>
           <article class="qa">
@@ -161,7 +165,7 @@
               </div>
             </div>
           </article>
-          <article class="schedule">
+          <article class="schedule" id="root">
             <h3 class="ttl row">１日の流れ<span>Working Schedule</span></h3>
             <div class="schedule_bg">
               <div class="row">
@@ -212,7 +216,7 @@
               </div>
             </div>
           </article>
-          <article class="shop">
+          <article class="shop" id="shop">
             <h3 class="ttl row">店舗情報<span>Shop</span></h3>
             <ul class="row">
               <li><a href="#"><img src="./images/shop_01.png" alt="shop"></a></li>
@@ -220,7 +224,7 @@
             </ul>
             <div class="recruit_btn flex show_pc">
               <a href="tel:0120-677-821" class="tel">0120-677-821</a>
-              <a href="/" class="mail">求人に応募する</a>
+              <a href="entry_form.html" class="mail">求人に応募する</a>
             </div>
           </article>
         </section>
@@ -241,7 +245,7 @@
         <small class="show_pc">&copy;Arice Group 2019</small>
         <div class="recruit_btn show_sp">
           <a href="tel:0120-677-821" class="tel">0120-677-821</a>
-          <a href="/" class="mail">求人に応募する</a>
+          <a href="entry_form.html" class="mail">求人に応募する</a>
         </div>
       </footer>
       <!-- end footer -->

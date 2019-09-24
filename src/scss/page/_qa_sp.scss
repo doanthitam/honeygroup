@@ -1,9 +1,8 @@
 @charset "utf-8";
 .sc_qa {
   .main_ttl {
-    width: vw(580) !important;
+    width: vw(480) !important;
     h2 {
-      padding-left: vw(70);
       &:after {
         background: url('../images/qa_icon.png')no-repeat;
         background-size: contain;

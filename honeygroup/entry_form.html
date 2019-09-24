@@ -10,7 +10,7 @@
   <body>
     <div class="container">
       <header id="header" class="header flex">
-        <div class="case">
+        <div class="case show_pc">
           <a href="#" class="btn men">男性の方</a>
           <a href="#" class="btn women">男性の方</a>
         </div>
@@ -19,14 +19,23 @@
         <nav class="nav" id="js-menu">
           <ul class="flex">
             <li><a href="company.html">ハニーグループについて</a></li>
-            <li><a href="#shop">店舗紹介</a></li>
+            <li><a href="index.html#shop">店舗紹介</a></li>
             <li><a href="recruit.html">募集情報</a></li>
-            <li><a href="working">働く仲間</a></li>
-            <li><a href="root">1日の流れ</a></li>
+            <li><a href="index.html#working">働く仲間</a></li>
+            <li><a href="index.html#root">1日の流れ</a></li>
           </ul>
-          <div class="header_btn">
+          <ul class="row flex show_sp">
+            <li><a href="qa.html">よくある質問Q & A</a></li>
+            <li><a href="#">女性の求人</a></li>
+            <li><a href="#">個人情報取り扱いについて</a></li>
+          </ul>
+          <div class="header_btn show_pc">
             <a href="tel:0120-677-821" class="tel">0120-677-821</a>
-            <a href="/" class="mail">求人に応募する</a>
+            <a href="entry_form.html" class="mail">求人に応募する</a>
+          </div>
+          <div class="case show_sp">
+            <a href="#" class="btn men">男性の方</a>
+            <a href="#" class="btn women">男性の方</a>
           </div>
         </nav>
       </header>
@@ -35,7 +44,7 @@
         <section class="sc_recruit">
           <div class="mv">
             <figure>
-              <img src="./images/company.jpg" alt="company">
+              <img src="./images/company_pc.jpg" class="resimg" alt="company">
             </figure>
             <div class="main_ttl"><h2>求人情報</h2></div>
           </div>
@@ -66,15 +75,15 @@
                       <ul class="block_radio">
                         <li>
                           <div class="radio">
-                            <label for="men">男性</label>
-                            <input type="radio" id="men" name="backdoc" value="men">
+                            <input id="radio-1" name="radio" type="radio">
+                            <label for="radio-1" class="radio-label">男性</label>
                           </div>
                         </li>
                         <li>
                           <div class="radio">
-                            <label for="women">女性</label>
-                            <input type="radio" id="women" name="backdoc" value="women">
-                          </div>
+                          <input id="radio-2" name="radio" type="radio">
+                          <label  for="radio-2" class="radio-label">女性</label>
+                        </div>
                         </li>
                       </ul>
                     </div>
@@ -95,16 +104,14 @@
                   <div class="row_form">
                     <label class="arrow">メールアドレス(確認)<em>※</em></label>
                     <div class="wrap">
-                      <div class="wrap">
-                        <input type="text" name="txt" id="PartName"  value="">
-                      </div>
+                      <input type="text" name="txt" id="PartName"  value="">
                     </div>
                   </div>
                   <div class="row_form">
                     <label class="arrow">募集職種<em>※</em></label>
-                    <div class="wrap">
+                    <div class="wrap select">
                       <select name="slct" id="slct">
-                        <option selected disabled>---選択してください---</option>
+                        <option value="">---選択してください---</option>
                         <option value="1">店長・幹部候補</option>
                         <option value="2">WEBデザイナー</option>
                         <option value="3">ホール・接客スタッフ</option>
@@ -128,7 +135,7 @@
       </main>
       <!-- end main -->
       <footer>
-        <ul class="row flex">
+        <ul class="row flex show_pc">
           <li><a href="#">アリスグループについて</a></li>
           <li><a href="#">募集情報</a></li>
           <li><a href="#">働く仲間</a></li>
@@ -138,8 +145,12 @@
           <li><a href="#">女性の求人</a></li>
           <li><a href="#">個人情報取り扱いについて</a></li>
         </ul>
-        <h1 class="logo_foo"><a href="/"><img src="./images/logo_foo.png" alt="alice group"></a></h1>
-        <small>&copy;Arice Group 2019</small>
+        <h1 class="logo_foo show_pc"><a href="/"><img src="./images/logo_foo.png" alt="alice group"></a></h1>
+        <small class="show_pc">&copy;Arice Group 2019</small>
+        <div class="recruit_btn show_sp">
+          <a href="tel:0120-677-821" class="tel">0120-677-821</a>
+          <a href="/" class="mail">求人に応募する</a>
+        </div>
       </footer>
       <!-- end footer -->
     </div>

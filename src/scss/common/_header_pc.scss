@@ -52,7 +52,6 @@
     text-decoration: none;
     overflow: hidden;
     color: #000;
-    transition: all 0.3s linear 0s;
   }
   ul {
     padding-top: 107px;
@@ -76,11 +75,17 @@
            -webkit-transform: rotate(45deg);
            transform: rotate(45deg);
         }
+        &:hover {
+          &:before {
+            left: 2px;
+          }
+        }
       }
     }
   }
   .header_btn {
     padding-top: 20px;
+    padding-right: 45px;
     a {
       &:after {
         content: "";
@@ -88,6 +93,9 @@
         top: 50%;
         transform: translateY(-50%);
         left: 0;
+      }
+      &:hover {
+        opacity: 0.6;
       }
     }
     .tel {

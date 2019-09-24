@@ -10,13 +10,14 @@
     position: absolute;
     bottom: vw(160);
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translateX(-50%);
     width: 100%;
-    padding: 0 vw(70);
+    top: vw(150);
+    // padding: 0 vw(70);
     h2 {
       color: #fff;
-      font-size: rem2(36);
-      line-height: vw(48);
+      font-size: rem2(34);
+      line-height: vw(46);
       position: relative;
       text-align: center;
       &:after {
@@ -60,7 +61,7 @@ a {
   text-decoration: none;
 }
 .recruit {
-  padding: vw(100) 0;
+  padding: vw(100) 0 0;
   ul {
     li {
       width: 100%;
@@ -180,4 +181,8 @@ a {
     background: url('../images/mail.png')no-repeat;
     background-size: contain;
   }
+}
+main {
+  position: relative;
+  padding-top: 71px;
 }
