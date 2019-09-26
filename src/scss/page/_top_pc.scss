@@ -1,121 +1,29 @@
 
 //------------------------------------------------------------------------
 @charset "utf-8";
-// .loadingAnim{
-//     position: fixed;
-//     z-index: 100;
-//     top: 0;
-//     right: 0;
-//     bottom: 0;
-//     left: 0;
-//     display: block;
-//     width: 100%;
-//     height: 100%;
-//     text-align: center;
-//     &:before,
-//     &:after{
-//       line-height: 1;
-//       position: fixed;
-//       z-index: 99;
-//       right: 0;
-//       left: 0;
-//       display: block;
-//       width: 100%;
-//       height: 50%;
-//       margin-right: auto;
-//       margin-left: auto;
-//       content: ' ';
-//       transition: all .3s cubic-bezier(.785, .135, .15, .86) 0s;
-//       transition-delay: .3s;
-//       background-color: #e72e0d;
-//     }
-//     &:before{
-//       top: 0;
-//     }
-//     &:after{
-//       bottom: 0;
-//     }
-// }
 
-// .loaded{
-//   .loadingAnim {
-//     &:before{
-//         height: 0;
-//         transform: translateY(-1%);
-//     }
-//     &:after{
-//         height: 0;;
-//         transform: translateY(1%);
-//     }
-//   }
-// }
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
 
-// .loadingAnim_line{
-//     line-height: 1;
-//     position: fixed;
-//     z-index: 100;
-//     top: 0;
-//     right: 0;
-//     bottom: 0;
-//     left: 0;
-//     display: inline-block;
-//     overflow: hidden;
-//     width: 400px;
-//     height: 50px;
-//     margin: auto;
-//     transition: all .3s cubic-bezier(.785, .135, .15, .86) 0s;
-//     transition-delay: .6s;
-//     text-align: center;
-//     &:after{
-//         position: absolute;
-//         z-index: 100;
-//         top: 0;
-//         bottom: 0;
-//         left: 0;
-//         display: block;
-//         width: 0;
-//         height: 100%;
-//         margin: auto  auto auto 0;
-//         content: ' ';
-//         animation: loadingAnim 2s ease-in-out .1s infinite normal backwards;
-//         background-color: #fff;
-//         will-change: transform, width;
-//     }
-//     &:before{
-//         font-family: 'Poppins', sans-serif;
-//         font-size: rem(30);
-//         font-weight: bold;
-//         font-style: normal;
-//         line-height: 1;
-//         display: block;
-//         content: 'ANIMOPRODUCE';
-//         animation: loadingAnim_text 1.5s ease .15s infinite alternate both;
-//         // letter-spacing: .5em;
-//         color: #fff;
-//         will-change: opacity;
-//     }
-//   }
-
-// .loaded {
-//   .loadingAnim_line{
-//     overflow: hidden;
-//     height: 0;
-//     &:after, &:before{
-//       animation: none;
-//     }
-//     // &:before {
-//     //   content: 'LOADED!';
-//     // }
-//   }
-// }
-// .list_photo img {
-//   transition: transform 2s, filter 1.5s ease-in-out;
-//   transform-origin: center center;
-// }
-// .list_photo .slick-active img {
-//   transform: scale(1.1);
-// }
-
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.ttl_top {
+  left: 60px !important;
+  transform: translate(0, -73%) !important;
+  top: 73% !important;
+  .fadeInUp {
+    opacity: 0;
+    animation-delay: 4s;
+    animation: fadeInUp 3s ease-in-out 0s forwards;
+  }
+}
 .toppage {
   padding: 0 0 60px;
   p {
@@ -198,6 +106,13 @@
         width: 427px;
         &:not(:last-child) {
           margin-right: 50px;
+        }
+        &:nth-of-type(2) {
+          a {
+            h4 {
+              color: #fff;
+            }
+          }
         }
         a{
           display: block;
@@ -298,6 +213,7 @@
         dt, dd {
           font-size: rem(16);
           line-height: rem(26);
+          font-weight: bold;
         }
         dt {
           color: #000;
@@ -339,7 +255,6 @@
       }
     }
     &_root {
-      padding-top: 100px;
       dl {
         display: flex;
         align-items: center;
@@ -363,6 +278,11 @@
           font-size: rem(16);
           line-height: rem(26);
           padding-left: 85px;
+          p {
+            &:nth-of-type(1) {
+              font-weight: bold;
+            }
+          }
         }
       }
     }

@@ -3,17 +3,19 @@
   padding: 0 vw(20);
   .mv {
     .main_ttl {
-      padding: 0 vw(20);
+      transform: translateX(0);
+      left: vw(108);
       h2 {
         line-height: vw(52);
+        text-align: left;
         &:after {
           background: url('../images/company_icon.png')no-repeat;
           background-size: contain;
           width: vw(60);
           height: vw(48);
-          top: 0;
-          left: vw(80);
-          transform: translate(0);
+          top: vw(36);
+          left: vw(-72);
+          transform: translateY(0);
         }
       }
     }
@@ -61,10 +63,13 @@
       dt {
         background: #fff;
         width: vw(200);
-        padding: vw(50) 0;
         font-size: rem2(30);
         text-align: center;
         line-height: vw(42);
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       dd {
         font-size: rem(16);

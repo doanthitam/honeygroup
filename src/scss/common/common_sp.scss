@@ -8,11 +8,10 @@
   overflow: hidden;
   .main_ttl {
     position: absolute;
-    bottom: vw(160);
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     width: 100%;
-    top: vw(150);
     // padding: 0 vw(70);
     h2 {
       color: #fff;
@@ -122,7 +121,7 @@ a {
     content: "";
     position: absolute;
     right: vw(32);
-    top: vw(36);
+    top: vw(30);
      width: vw(16);
      height: vw(16);
      border-top: 1px solid #24c6ef;
@@ -135,6 +134,9 @@ a {
   color: #000;
   margin: 0 auto;
   margin-top: vw(60);
+  &:before {
+    top: vw(29);
+  }
 }
 .recruit_btn {
   width: 100%;
@@ -186,3 +188,19 @@ main {
   position: relative;
   padding-top: 71px;
 }
+.loadingAnim_line{
+    &:before{
+        font-family: "Ubuntu";
+        margin-right: vw(25.2);
+        font-size: rem2(60);
+        font-weight: bold;
+        font-style: normal;
+        line-height: 1;
+        display: block;
+        content: 'Alice Group';
+        animation: loadingAnim_text 1.5s ease .15s infinite alternate both;
+        // letter-spacing: .5em;
+        color: #fff;
+        will-change: opacity;
+    }
+  }

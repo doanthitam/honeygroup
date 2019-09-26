@@ -12,13 +12,13 @@ footer {
       &.tel {
         font-size: rem2(50);
         font-weight: bold;
-        padding-left: vw(60);
+        padding-left: vw(71);
         line-height: vw(62);
         &:after {
           width: vw(42);
           height: vw(51);
           top: vw(85);
-          left: vw(10);
+          left: vw(19);
           background: url('../images/phone_icon_foo.png')no-repeat;
           background-size: contain;
         }

@@ -47,18 +47,18 @@ $(function(){
   });
 });
 
-// var $delayTime = 1000;
-//  $(window).on('load', function() {
-//    var $loadingAnim = $('#loadingAnim'),
-//        $body = $('body');
-//
-//      setTimeout( function(){
-//
-//        $body.addClass('loaded');
-//
-//        $loadingAnim.find('.loadingAnim_line').on('transitionend', function( e ){
-//          $(this).parent().remove(); }); }, $delayTime );
-//  });
+var $delayTime = 1000;
+ $(window).on('load', function() {
+   var $loadingAnim = $('#loadingAnim'),
+       $body = $('body');
+
+     setTimeout( function(){
+
+       $body.addClass('loaded');
+
+       $loadingAnim.find('.loadingAnim_line').on('transitionend', function( e ){
+         $(this).parent().remove(); }); }, $delayTime );
+ });
 
  $('a[href^="#"]').click(function(){
    var hasttop = $(this.hash).offset().top;
