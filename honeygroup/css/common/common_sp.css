@@ -171,11 +171,12 @@ a {
   line-height: vw(120);
   padding-left: vw(30);
   color: #fff;
-  font-size: "Roboto";
+  font-size: "Ubuntu";
+  font-weight: bold;
 }
 
 .recruit_btn .mail {
-  margin: 0 vw(20) 0 0;
+  margin: 0 vw(30) 0 0;
   width: vw(300);
 }
 
@@ -213,16 +214,7 @@ main {
   padding-top: 71px;
 }
 
-.loadingAnim_line:before {
-  font-family: "Ubuntu";
-  margin-right: vw(25.2);
-  font-size: rem2(60);
-  font-weight: bold;
-  font-style: normal;
-  line-height: 1;
-  display: block;
-  content: 'Alice Group';
-  animation: loadingAnim_text 1.5s ease .15s infinite alternate both;
-  color: #fff;
-  will-change: opacity;
+.loadingAnim_line {
+  width: vw(300);
+  height: vw(90);
 }

@@ -85,3 +85,12 @@ $(document).ready(function() {
 		$(this).next().slideToggle();
 	});
 });
+
+// $(document).ready(function(){
+//   // if the "no" button is clicked, take the user elsewhere
+//   $('#no').click(function(e) {
+//         alert("Sorry, you are not old enough to enter this site.");
+//         window.location = "https://www.google.com";
+//
+//     });
+// });

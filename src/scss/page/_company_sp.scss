@@ -70,6 +70,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: vw(40) 0;
       }
       dd {
         font-size: rem(16);
@@ -77,6 +78,7 @@
         width: vw(568);
         border-bottom: 1px dotted #000;
         padding-left: vw(30);
+        padding: vw(40) 0;
       }
     }
   }

@@ -160,31 +160,32 @@ a {
   }
 }
 .recruit_btn {
-  width: 600px;
-  height: 80px;
+  width: 629px;
+  height: 90px;
   background: #24c6ef;
   justify-content: space-between;
   margin: 60px auto 0;
   .tel {
     font-size: rem(40);
-    line-height: rem(80);
-    padding-left: 30px;
+    line-height: rem(90);
+    padding-left: 40px;
     color: #fff;
     font-family: "Ubuntu";
+    font-weight: bold;
   }
   .mail {
-    margin: 20px 35px 0 0;
+    margin: 20px 40px 0 0;
     width: 200px;
   }
 }
 .mail {
   // margin: 20px 35px 0 0;
   background: #fff;
-  line-height: rem(40);
+  line-height: rem(45);
   font-size: rem(16);
-  height: 40px;
+  height: 45px;
   font-weight: bold;
-  padding-left: 30px;
+  padding-left: 39px;
   color: #000;
   position: relative;
   text-align: center;
@@ -195,7 +196,7 @@ a {
     height: 16px;
     top: 50%;
     transform: translateY(-50%);
-    left: 20px;
+    left: 28px;
     background: url('../images/mail.png')no-repeat;
     background-size: contain;
   }

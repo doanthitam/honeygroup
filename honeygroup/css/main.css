@@ -623,8 +623,8 @@ img {
   left: 0;
   display: inline-block;
   overflow: hidden;
-  width: 400px;
-  height: 50px;
+  width: 250px;
+  height: 55px;
   margin: auto;
   transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
   transition-delay: .3s;
@@ -640,7 +640,7 @@ img {
   display: block;
   width: 0;
   height: 100%;
-  margin: auto  auto auto 0;
+  margin: auto;
   content: ' ';
   animation: loadingAnim 2s ease-in-out .1s infinite normal backwards;
   background-color: #fff;
@@ -648,15 +648,13 @@ img {
 }
 
 .loadingAnim_line:before {
-  font-family: "Ubuntu";
-  font-size: 4rem;
-  font-weight: bold;
-  font-style: normal;
-  line-height: 1;
   display: block;
-  content: 'Alice Group';
+  content: "";
+  background: url("../images/logo_load.png") no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
   animation: loadingAnim_text 1.5s ease .15s infinite alternate both;
-  color: #fff;
   will-change: opacity;
 }
 
@@ -681,7 +679,7 @@ img {
   opacity: 1;
 }
 
-@media screen and (min-width: 768px), print {
+@media screen and (min-width: 769px), print {
   @keyframes fadeInUp {
     from {
       opacity: 0;
@@ -691,6 +689,37 @@ img {
       opacity: 1;
       transform: none;
     }
+  }
+  .case {
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+  .case a {
+    width: 250px;
+    height: 50px;
+    color: #fff;
+    line-height: 5rem;
+  }
+  .case a:before {
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    left: 33px;
+    top: 20px;
+  }
+  .case a.men {
+    background: #24c6ef;
+    padding-left: 20px;
+  }
+  .case a.women {
+    background: #ff6490;
+    padding-left: 16px;
+  }
+  .case a.women::before {
+    left: 45px;
   }
   .ttl_top {
     left: 60px !important;
@@ -703,7 +732,7 @@ img {
     animation: fadeInUp 3s ease-in-out 0s forwards;
   }
   .toppage {
-    padding: 0 0 60px;
+    padding: 0 0 100px;
   }
   .toppage p {
     color: #000;
@@ -723,8 +752,10 @@ img {
   }
   .toppage .philosophy_point {
     background: #f3f3f3;
-    padding: 50px 0;
+    padding: 35px 0 35px;
     margin-bottom: 50px;
+    -ms-flex-align: center;
+        align-items: center;
   }
   .toppage .philosophy_ttl {
     width: 50%;
@@ -737,22 +768,21 @@ img {
     width: 520px;
     height: 1px;
     background: #000;
-    top: 108px;
+    top: 100px;
     left: 0;
     right: 0;
   }
   .toppage .philosophy_ttl .white_bg {
     width: 358px;
     background: #fff;
-    padding: 70px 30px;
+    padding: 52px 30px 41px;
     margin: 0 auto;
     text-align: center;
   }
   .toppage .philosophy_ttl .white_bg h3 {
     font-size: 1.8rem;
     line-height: 2.6rem;
-    padding-bottom: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 34px;
   }
   .toppage .philosophy_ttl .white_bg p {
     font-size: 5rem;
@@ -767,7 +797,7 @@ img {
   .toppage .philosophy_des {
     width: 50%;
   }
-  .toppage .philosophy_des dl {
+  .toppage .philosophy_des dl:not(:last-child) {
     margin-bottom: 20px;
   }
   .toppage .philosophy_des dl dt {
@@ -785,13 +815,10 @@ img {
         justify-content: space-between;
   }
   .toppage .philosophy ul li {
-    width: 427px;
+    width: 450px;
   }
   .toppage .philosophy ul li:not(:last-child) {
     margin-right: 50px;
-  }
-  .toppage .philosophy ul li:nth-of-type(2) a h4 {
-    color: #fff;
   }
   .toppage .philosophy ul li a {
     display: block;
@@ -807,14 +834,18 @@ img {
     transform: translate(-50%, -50%);
     color: #000;
     font-family: "Ubuntu";
-  }
-  .toppage .philosophy ul li p {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
+    color: #cecece;
+    width: 100%;
     text-align: center;
   }
+  .toppage .philosophy ul li p {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    text-align: center;
+    font-weight: bold;
+  }
   .toppage .working {
-    padding: 100px 0;
+    padding: 70px 0;
   }
   .toppage .working h3 {
     margin-bottom: 60px;
@@ -826,53 +857,57 @@ img {
   }
   .toppage .working_staff_name {
     background: #f1f1f1;
-    padding: 80px 0;
-    width: 510px;
+    padding: 43px 0 26px;
+    width: 400px;
     float: left;
     position: relative;
     z-index: 1;
-    margin: -45px 30px 0;
+    margin: -63px 0 0 74px;
     text-align: center;
   }
   .toppage .working_staff_name h4 {
-    font-size: 5.7rem;
-    line-height: 7rem;
+    font-size: 3.5rem;
+    line-height: 5rem;
     margin-bottom: 25px;
   }
   .toppage .working_staff_name p {
-    margin-bottom: 30px;
+    margin-bottom: 22px;
   }
   .toppage .working_staff_name p:nth-of-type(1) {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: bold;
     line-height: 4.2rem;
   }
   .toppage .working_staff_name p:nth-of-type(2) {
-    font-size: 6rem;
+    font-size: 3rem;
     line-height: 7.4rem;
+    margin-bottom: -8px;
   }
-  .toppage .working_staff_name p:nth-of-type(3), .toppage .working_staff_name p:nth-of-type(4) {
-    font-size: 2.5rem;
+  .toppage .working_staff_name p:nth-of-type(3) {
+    font-size: 1.6rem;
+  }
+  .toppage .working_staff_name p:nth-of-type(4) {
+    font-size: 2rem;
     line-height: 2.9rem;
   }
   .toppage .working_staff_des {
     width: 50%;
     float: right;
-    padding: 80px 50px 0 50px;
+    padding: 40px 74px 0 0;
   }
   .toppage .working_staff_des h5 {
     font-size: 3.5rem;
     font-weight: bold;
     line-height: 4.2rem;
-    margin-bottom: 70px;
+    margin-bottom: 25px;
   }
   .toppage .working_staff_des p {
     font-size: 1.6rem;
-    line-height: 2.6rem;
+    line-height: 3rem;
   }
   .toppage .qa_inner {
     background: #f1f1f1;
-    padding: 100px 0;
+    padding: 70px 0;
   }
   .toppage .qa_inner .row {
     padding: 0 50px;
@@ -892,13 +927,13 @@ img {
     margin-bottom: 25px;
   }
   .toppage .qa_inner dl dd {
-    color: #f05f5f;
+    color: #10aad1;
   }
   .toppage .qa .btn {
     background: #fff;
   }
   .toppage .schedule {
-    padding: 100px 0 0;
+    padding: 70px 0 0;
   }
   .toppage .schedule_bg {
     background: #f1f1f1;
@@ -911,7 +946,7 @@ img {
   .toppage .schedule_top figure {
     background: #fff;
     width: 200px;
-    padding: 60px 0 20px;
+    padding: 37px 0 0;
   }
   .toppage .schedule_top figure img {
     width: 50px;
@@ -920,7 +955,7 @@ img {
   }
   .toppage .schedule_top p {
     width: calc(100% - 200px);
-    padding: 73px 0 0 85px;
+    padding: 53px 0 0 85px;
     font-size: 2rem;
     line-height: 3rem;
     font-weight: bold;
@@ -949,9 +984,10 @@ img {
   }
   .toppage .schedule_root dl dd p:nth-of-type(1) {
     font-weight: bold;
+    margin-bottom: 5px;
   }
   .toppage .shop {
-    padding: 100px 0;
+    padding: 70px 0;
   }
   .toppage .shop ul {
     display: -ms-flexbox;
@@ -960,6 +996,65 @@ img {
   .toppage .shop ul li {
     width: calc(100% / 2);
     padding: 0 50px;
+  }
+  .toppage .shop ul li p {
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+  }
+  .toppage .shop ul li .shop_img {
+    width: 400px;
+    height: 137px;
+    display: block;
+    margin: 0 auto 30px;
+  }
+  .toppage .shop ul li iframe {
+    width: 100%;
+    height: 300px;
+  }
+  .toppage .agePopUp {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+  }
+  .toppage .agePopUp h3 {
+    font-size: 2.5rem;
+    line-height: 3.2rem;
+    position: relative;
+  }
+  .toppage .agePopUp h3:after {
+    content: "";
+    background: url("../images/age.png") no-repeat;
+    width: 100px;
+    height: 200px;
+    background-size: contain;
+    position: absolute;
+    top: -116px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .toppage .agePopUp p {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    margin-bottom: 162px;
+  }
+  .toppage .agePopUp a {
+    background-color: #000;
+    width: 200px;
+    height: 45px;
+    color: #fff;
+    line-height: 4.5rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    display: inline-block;
+    margin: 45px 20px 0;
+  }
+  .toppage .agePopUp a:nth-of-type(1) {
+    background-color: #fb2d28;
+  }
+  .toppage .agePopUp a:nth-of-type(2) {
+    background-color: #8a8a8a;
   }
   .company {
     padding-bottom: 100px;
@@ -978,12 +1073,13 @@ img {
   }
   .company .block h3 {
     text-align: center;
-    font-size: 2rem;
-    line-height: 2.6rem;
-    margin-bottom: 30px;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-bottom: 40px;
   }
   .company .block h3 span {
     color: #24c6ef;
+    margin-top: 5px;
     font-size: 1.5rem;
     line-height: 2.4rem;
     display: block;
@@ -1007,7 +1103,7 @@ img {
   .company .block_txt p {
     margin: 0 90px 0;
     font-size: 1.6rem;
-    line-height: 2.8rem;
+    line-height: 3rem;
   }
   .company .block dl {
     display: -ms-flexbox;
@@ -1016,6 +1112,13 @@ img {
         align-items: center;
     margin-bottom: 37px;
     padding: 0 90px;
+  }
+  .company .block dl:last-child dt {
+    padding: 33px 0;
+  }
+  .company .block dl:last-child dd {
+    padding-top: 17px;
+    padding-bottom: 23px;
   }
   .company .block dl dt {
     background: #fff;
@@ -1036,7 +1139,7 @@ img {
     width: calc(100% - 130px);
     padding-left: 60px;
     border-bottom: 1px dotted #000;
-    height: 77px;
+    min-height: 77px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
@@ -1362,7 +1465,7 @@ img {
     top: 29px;
   }
   .sc_qa dl dd {
-    color: #f06464;
+    color: #10aad1;
     display: none;
   }
   .header {
@@ -1493,7 +1596,7 @@ img {
   footer ul {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 0 189px;
+    padding: 0 258px;
   }
   footer ul li {
     margin: 0 20px 25px;
@@ -1524,6 +1627,11 @@ img {
   }
   footer ul li a:hover {
     opacity: 0.8;
+  }
+  footer .line {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
   }
   footer .logo_foo {
     width: 215px;
@@ -1681,8 +1789,8 @@ img {
     border-right: 1px solid #fff;
   }
   .recruit_btn {
-    width: 600px;
-    height: 80px;
+    width: 629px;
+    height: 90px;
     background: #24c6ef;
     -ms-flex-pack: justify;
         justify-content: space-between;
@@ -1690,22 +1798,23 @@ img {
   }
   .recruit_btn .tel {
     font-size: 4rem;
-    line-height: 8rem;
-    padding-left: 30px;
+    line-height: 9rem;
+    padding-left: 40px;
     color: #fff;
     font-family: "Ubuntu";
+    font-weight: bold;
   }
   .recruit_btn .mail {
-    margin: 20px 35px 0 0;
+    margin: 20px 40px 0 0;
     width: 200px;
   }
   .mail {
     background: #fff;
-    line-height: 4rem;
+    line-height: 4.5rem;
     font-size: 1.6rem;
-    height: 40px;
+    height: 45px;
     font-weight: bold;
-    padding-left: 30px;
+    padding-left: 39px;
     color: #000;
     position: relative;
     text-align: center;
@@ -1717,7 +1826,7 @@ img {
     height: 16px;
     top: 50%;
     transform: translateY(-50%);
-    left: 20px;
+    left: 28px;
     background: url("../images/mail.png") no-repeat;
     background-size: contain;
   }
@@ -1747,7 +1856,40 @@ img {
     animation: fadeInUp 3s ease-in-out 0s forwards;
   }
   .toppage {
-    padding: 0 2.60417vw;
+    padding: 0 2.60417vw 13.02083vw;
+  }
+  .toppage .case {
+    margin-top: 6.51042vw;
+  }
+  .toppage .case a {
+    display: block;
+    width: 58.59375vw;
+    height: 13.02083vw;
+    color: #fff;
+    line-height: 13.02083vw;
+    font-size: 3.64583vw;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .toppage .case a:before {
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    top: 5.46875vw;
+  }
+  .toppage .case a.men {
+    background: #24c6ef;
+    padding-left: 3.64583vw;
+    margin-bottom: 3.90625vw;
+  }
+  .toppage .case a.men:before {
+    left: 7.8125vw;
+  }
+  .toppage .case a.women {
+    padding-left: 3.64583vw;
+    background: #ff6490;
+  }
+  .toppage .case a.women:before {
+    left: 11.71875vw;
   }
   .toppage .philosophy {
     padding: 13.02083vw 0 0;
@@ -1804,20 +1946,19 @@ img {
   .toppage .philosophy ul li a h4 {
     position: absolute;
     font-size: 5.20833vw;
-    line-height: 5.4rem;
+    line-height: 7.03125vw;
+    color: #cecece;
     top: 50%;
     left: 50%;
+    width: 100%;
+    text-align: center;
     transform: translate(-50%, -50%);
-    color: #000;
     font-family: "Ubuntu";
   }
   .toppage .philosophy ul li p {
     font-size: 3.90625vw;
     line-height: 5.46875vw;
     text-align: center;
-  }
-  .toppage .philosophy ul li:nth-of-type(2) a h4 {
-    color: #fff;
   }
   .toppage .working {
     padding: 13.02083vw 0;
@@ -1889,7 +2030,7 @@ img {
     margin-bottom: 1.95312vw;
   }
   .toppage .qa_inner dl dd {
-    color: #f05f5f;
+    color: #10aad1;
   }
   .toppage .qa .btn {
     background: #fff;
@@ -1948,8 +2089,59 @@ img {
     padding-top: 13.02083vw;
   }
   .toppage .shop ul li {
-    width: 72.91667vw;
-    margin: 3.90625vw auto;
+    width: 83.33333vw;
+    margin: 3.90625vw auto 6.51042vw;
+  }
+  .toppage .shop ul li p {
+    margin-bottom: 1.30208vw;
+    font-size: 3.64583vw;
+    line-height: 5.20833vw;
+  }
+  .toppage .shop ul li iframe {
+    width: 100%;
+    height: 45.57292vw;
+  }
+  .toppage .agePopUp {
+    text-align: center;
+  }
+  .toppage .agePopUp h3 {
+    font-size: 5.20833vw;
+    line-height: 6.77083vw;
+    position: relative;
+  }
+  .toppage .agePopUp h3:after {
+    content: "";
+    background: url("../images/age.png") no-repeat;
+    width: 13.02083vw;
+    height: 19.53125vw;
+    background-size: contain;
+    position: absolute;
+    top: -15.625vw;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .toppage .agePopUp p {
+    font-size: 3.90625vw;
+    line-height: 5.46875vw;
+    margin-bottom: 13.02083vw;
+    text-align: left;
+    padding: 0 2.60417vw;
+  }
+  .toppage .agePopUp a {
+    background-color: #000;
+    width: 41.66667vw;
+    height: 12.76042vw;
+    color: #fff;
+    line-height: 12.76042vw;
+    font-size: 3.90625vw;
+    display: inline-block;
+    margin: 0 2.60417vw 0;
+  }
+  .toppage .agePopUp a:nth-of-type(1) {
+    background-color: #fb2d28;
+  }
+  .toppage .agePopUp a:nth-of-type(2) {
+    background-color: #8a8a8a;
   }
   .company {
     padding: 0 2.60417vw;
@@ -2027,6 +2219,7 @@ img {
         align-items: center;
     -ms-flex-pack: center;
         justify-content: center;
+    padding: 5.20833vw 0;
   }
   .company .block dl dd {
     font-size: 1.6rem;
@@ -2034,6 +2227,7 @@ img {
     width: 73.95833vw;
     border-bottom: 1px dotted #000;
     padding-left: 3.90625vw;
+    padding: 5.20833vw 0;
   }
   .sc_qa .main_ttl {
     width: 62.5vw !important;
@@ -2089,7 +2283,7 @@ img {
     transform: translateY(0);
   }
   .sc_qa dl dd {
-    color: #f06464;
+    color: #10aad1;
     display: none;
   }
   .sc_recruit .mv .main_ttl {
@@ -2101,6 +2295,9 @@ img {
   .sc_recruit .mv .main_ttl.privacy_ttl h2:after {
     background: url("../images/privacy_icon.png") no-repeat;
     background-size: contain;
+  }
+  .sc_recruit .mv .main_ttl.entry_ttl {
+    width: 39.0625vw;
   }
   .sc_recruit .mv .main_ttl h2 {
     position: relative;
@@ -2469,7 +2666,17 @@ img {
   .header .nav .case a.women:before {
     left: 11.71875vw;
   }
+  footer {
+    position: relative;
+  }
+  footer .line {
+    width: 45.57292vw;
+    height: 9.89583vw;
+    display: block;
+    margin: 0 auto 5.20833vw;
+  }
   footer .recruit_btn {
+    margin-top: 0;
     padding: 14.32292vw 0;
     position: relative;
   }
@@ -2649,10 +2856,11 @@ img {
     line-height: 15.625vw;
     padding-left: 3.90625vw;
     color: #fff;
-    font-size: "Roboto";
+    font-size: "Ubuntu";
+    font-weight: bold;
   }
   .recruit_btn .mail {
-    margin: 0 2.60417vw 0 0;
+    margin: 0 3.90625vw 0 0;
     width: 39.0625vw;
   }
   .recruit_btn .mail:after {
@@ -2685,18 +2893,9 @@ img {
     position: relative;
     padding-top: 71px;
   }
-  .loadingAnim_line:before {
-    font-family: "Ubuntu";
-    margin-right: 3.28125vw;
-    font-size: 7.8125vw;
-    font-weight: bold;
-    font-style: normal;
-    line-height: 1;
-    display: block;
-    content: 'Alice Group';
-    animation: loadingAnim_text 1.5s ease .15s infinite alternate both;
-    color: #fff;
-    will-change: opacity;
+  .loadingAnim_line {
+    width: 39.0625vw;
+    height: 11.71875vw;
   }
   .show_pc {
     display: none !important;

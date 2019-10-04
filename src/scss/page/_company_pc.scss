@@ -18,11 +18,12 @@
     margin: 70px 0;
     h3 {
       text-align: center;
-      font-size: rem(20);
-      line-height: rem(26);
-      margin-bottom: 30px;
+      font-size: rem(25);
+      line-height: rem(30);
+      margin-bottom: 40px;
       span {
         color:#24c6ef;
+        margin-top: 5px;
         font-size: rem(15);
         line-height: rem(24);
         display: block;
@@ -46,7 +47,7 @@
       p {
         margin: 0 90px 0;
         font-size: rem(16);
-        line-height: rem(28)
+        line-height: rem(30)
       }
     }
     dl {
@@ -54,6 +55,15 @@
       align-items: center;
       margin-bottom: 37px;
       padding: 0 90px;
+      &:last-child {
+        dt {
+          padding: 33px 0;
+        }
+        dd {
+          padding-top: 17px;
+          padding-bottom: 23px;
+        }
+      }
       dt {
         background: #fff;
         width: 150px;
@@ -70,7 +80,7 @@
         width: calc(100% - 130px);
         padding-left: 60px;
         border-bottom: 1px dotted #000;
-        height: 77px;
+        min-height: 77px;
         display: flex;
         align-items: center;
       }

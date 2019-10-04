@@ -4,7 +4,7 @@ footer {
   padding: 100px 0;
   ul {
     flex-wrap: wrap;
-    padding: 0 189px;
+    padding: 0 258px;
     li {
       margin: 0 20px 25px;
       a {
@@ -36,6 +36,11 @@ footer {
         }
       }
     }
+  }
+  .line {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
   }
   .logo_foo {
     width: 215px;
