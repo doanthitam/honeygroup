@@ -354,43 +354,25 @@
       }
     }
   }
-  .agePopUp {
-    background-color: #fff;
-    padding: 30px;
-    text-align: center;
-    h3 {
-      font-size: rem(25);
-      line-height: rem(32);
-      position: relative;
-      &:after {
-        content: "";
-        background: url("../images/age.png") no-repeat;
-        width: 100px;
-        height: 200px;
-        background-size: contain;
-        position: absolute;
-        top: -116px;
-        left: 50%;
-        transform: translate(-50% , 0);
-      }
-    }
-    p {
-      font-size: rem(16);
-      line-height: rem(26);
-      margin-bottom: 162px;
-    }
+}
+.age_check {
+  figure {
+    width: 630px;
+    margin: 0 auto;
+  }
+  &_btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
     a {
-      background-color: #000;
       width: 200px;
-      height: 45px;
+      height: 60px;
       color: #fff;
-      line-height: rem(45);
-      cursor: pointer;
-      outline: none;
-      border: none;
+      line-height: rem(60);
       font-size: rem(20);
-      display: inline-block;
-      margin: 45px 20px 0;
+      display: block;
+      text-align: center;
+      margin: 0 20px;
       &:nth-of-type(1) {
         background-color: #fb2d28;
       }

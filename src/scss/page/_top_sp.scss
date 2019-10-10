@@ -282,30 +282,10 @@
       }
     }
   }
-  .agePopUp {
-    text-align: center;
-    h3 {
-      font-size: rem2(40);
-      line-height: vw(52);
-      position: relative;
-      &:after {
-        content: "";
-        background: url("../images/age.png") no-repeat;
-        width: vw(100);
-        height: vw(150);
-        background-size: contain;
-        position: absolute;
-        top: vw(-120);
-        left: 50%;
-        transform: translate(-50% , 0);
-      }
-    }
-    p {
-      font-size: rem2(30);
-      line-height: vw(42);
-      margin-bottom: vw(100);
-      text-align: left;
-      padding: 0 vw(20);
+  .age_check {
+    figure {
+      width: vw(670);
+      margin: 0 auto;
     }
     a {
       background-color: #000;
@@ -315,7 +295,8 @@
       line-height: vw(98);
       font-size: rem2(30);
       display: inline-block;
-      margin: 0 vw(20) 0;
+      text-align: center;
+      margin: vw(30) vw(20) 0;
       &:nth-of-type(1) {
         background-color: #fb2d28;
       }

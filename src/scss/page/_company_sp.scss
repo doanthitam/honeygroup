@@ -55,30 +55,70 @@
         padding: 0 vw(40);
       }
     }
-    dl {
-      display: flex;
-      margin-bottom: vw(60);
-      padding: 0 vw(20);
-      min-height: vw(140);
-      dt {
-        background: #fff;
-        width: vw(200);
-        font-size: rem2(30);
-        text-align: center;
-        line-height: vw(42);
-        font-weight: bold;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: vw(40) 0;
-      }
-      dd {
-        font-size: rem(16);
-        line-height: rem(26);
-        width: vw(568);
-        border-bottom: 1px dotted #000;
-        padding-left: vw(30);
-        padding: vw(40) 0;
+    // dl {
+    //   display: flex;
+    //   margin-bottom: vw(60);
+    //   padding: 0 vw(20);
+    //   min-height: vw(140);
+    //   dt {
+    //     background: #fff;
+    //     width: vw(200);
+    //     font-size: rem2(30);
+    //     text-align: center;
+    //     line-height: vw(42);
+    //     font-weight: bold;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     padding: vw(40) 0;
+    //   }
+    //   dd {
+    //     font-size: rem(16);
+    //     line-height: rem(26);
+    //     width: vw(568);
+    //     border-bottom: 1px dotted #000;
+    //     padding-left: vw(30);
+    //     padding: vw(40) 0;
+    //   }
+    // }
+    .point_txt {
+      counter-reset: li;
+      ul {
+        padding: vw(60) vw(70) 0;
+        margin: 0 auto;
+        li {
+          counter-increment: li;
+          font-size: rem2(30);
+          line-height: vw(42);
+          position: relative;
+          margin: 0 auto;
+          padding-left: vw(65);
+          &:after {
+            position: absolute;
+            content: "";
+            border: vw(2) solid #10aad1;
+            border-radius: 100%;
+            width: vw(50);
+            height: vw(50);
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+          &:before {
+            content: counter(li);
+            font-size: rem2(32);
+            font-weight: normal;
+            line-height: 1;
+            color: #10aad1;
+            font-weight: 400;
+            left: vw(17);
+            bottom: vw(4);
+            position: absolute;
+          }
+          &:not(:last-child) {
+            margin-bottom: vw(40);
+          }
+        }
       }
     }
   }

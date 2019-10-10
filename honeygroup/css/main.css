@@ -1011,49 +1011,31 @@ img {
     width: 100%;
     height: 300px;
   }
-  .toppage .agePopUp {
-    background-color: #fff;
-    padding: 30px;
-    text-align: center;
+  .age_check figure {
+    width: 630px;
+    margin: 0 auto;
   }
-  .toppage .agePopUp h3 {
-    font-size: 2.5rem;
-    line-height: 3.2rem;
-    position: relative;
+  .age_check_btn {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin-top: 40px;
   }
-  .toppage .agePopUp h3:after {
-    content: "";
-    background: url("../images/age.png") no-repeat;
-    width: 100px;
-    height: 200px;
-    background-size: contain;
-    position: absolute;
-    top: -116px;
-    left: 50%;
-    transform: translate(-50%, 0);
-  }
-  .toppage .agePopUp p {
-    font-size: 1.6rem;
-    line-height: 2.6rem;
-    margin-bottom: 162px;
-  }
-  .toppage .agePopUp a {
-    background-color: #000;
+  .age_check_btn a {
     width: 200px;
-    height: 45px;
+    height: 60px;
     color: #fff;
-    line-height: 4.5rem;
-    cursor: pointer;
-    outline: none;
-    border: none;
+    line-height: 6rem;
     font-size: 2rem;
-    display: inline-block;
-    margin: 45px 20px 0;
+    display: block;
+    text-align: center;
+    margin: 0 20px;
   }
-  .toppage .agePopUp a:nth-of-type(1) {
+  .age_check_btn a:nth-of-type(1) {
     background-color: #fb2d28;
   }
-  .toppage .agePopUp a:nth-of-type(2) {
+  .age_check_btn a:nth-of-type(2) {
     background-color: #8a8a8a;
   }
   .company {
@@ -1105,45 +1087,46 @@ img {
     font-size: 1.6rem;
     line-height: 3rem;
   }
-  .company .block dl {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center;
-    margin-bottom: 37px;
-    padding: 0 90px;
+  .company .point_txt {
+    counter-reset: li;
   }
-  .company .block dl:last-child dt {
-    padding: 33px 0;
+  .company .point_txt ul {
+    padding: 60px 0 0;
+    width: 400px;
+    margin: 0 auto;
   }
-  .company .block dl:last-child dd {
-    padding-top: 17px;
-    padding-bottom: 23px;
-  }
-  .company .block dl dt {
-    background: #fff;
-    width: 150px;
-    padding: 25px 0;
-    font-size: 1.8rem;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-pack: center;
-        justify-content: center;
-    font-weight: bold;
-  }
-  .company .block dl dd {
-    font-size: 1.6rem;
+  .company .point_txt ul li {
+    counter-increment: li;
+    font-size: 2rem;
     line-height: 2.6rem;
-    width: calc(100% - 130px);
-    padding-left: 60px;
-    border-bottom: 1px dotted #000;
-    min-height: 77px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center;
+    position: relative;
+    margin: 0 auto;
+    padding-left: 45px;
+  }
+  .company .point_txt ul li:after {
+    position: absolute;
+    content: "";
+    border: 2px solid #10aad1;
+    border-radius: 100%;
+    width: 28px;
+    height: 28px;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .company .point_txt ul li:before {
+    content: counter(li);
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 1;
+    color: #10aad1;
+    font-weight: 400;
+    left: 11px;
+    bottom: 3px;
+    position: absolute;
+  }
+  .company .point_txt ul li:not(:last-child) {
+    margin-bottom: 37px;
   }
   .sc_recruit {
     padding-bottom: 100px;
@@ -2101,33 +2084,11 @@ img {
     width: 100%;
     height: 45.57292vw;
   }
-  .toppage .agePopUp {
-    text-align: center;
+  .toppage .age_check figure {
+    width: 87.23958vw;
+    margin: 0 auto;
   }
-  .toppage .agePopUp h3 {
-    font-size: 5.20833vw;
-    line-height: 6.77083vw;
-    position: relative;
-  }
-  .toppage .agePopUp h3:after {
-    content: "";
-    background: url("../images/age.png") no-repeat;
-    width: 13.02083vw;
-    height: 19.53125vw;
-    background-size: contain;
-    position: absolute;
-    top: -15.625vw;
-    left: 50%;
-    transform: translate(-50%, 0);
-  }
-  .toppage .agePopUp p {
-    font-size: 3.90625vw;
-    line-height: 5.46875vw;
-    margin-bottom: 13.02083vw;
-    text-align: left;
-    padding: 0 2.60417vw;
-  }
-  .toppage .agePopUp a {
+  .toppage .age_check a {
     background-color: #000;
     width: 41.66667vw;
     height: 12.76042vw;
@@ -2135,12 +2096,13 @@ img {
     line-height: 12.76042vw;
     font-size: 3.90625vw;
     display: inline-block;
-    margin: 0 2.60417vw 0;
+    text-align: center;
+    margin: 3.90625vw 2.60417vw 0;
   }
-  .toppage .agePopUp a:nth-of-type(1) {
+  .toppage .age_check a:nth-of-type(1) {
     background-color: #fb2d28;
   }
-  .toppage .agePopUp a:nth-of-type(2) {
+  .toppage .age_check a:nth-of-type(2) {
     background-color: #8a8a8a;
   }
   .company {
@@ -2199,35 +2161,45 @@ img {
     line-height: 5.46875vw;
     padding: 0 5.20833vw;
   }
-  .company .block dl {
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 7.8125vw;
-    padding: 0 2.60417vw;
-    min-height: 18.22917vw;
+  .company .block .point_txt {
+    counter-reset: li;
   }
-  .company .block dl dt {
-    background: #fff;
-    width: 26.04167vw;
+  .company .block .point_txt ul {
+    padding: 7.8125vw 9.11458vw 0;
+    margin: 0 auto;
+  }
+  .company .block .point_txt ul li {
+    counter-increment: li;
     font-size: 3.90625vw;
-    text-align: center;
     line-height: 5.46875vw;
-    font-weight: bold;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-pack: center;
-        justify-content: center;
-    padding: 5.20833vw 0;
+    position: relative;
+    margin: 0 auto;
+    padding-left: 8.46354vw;
   }
-  .company .block dl dd {
-    font-size: 1.6rem;
-    line-height: 2.6rem;
-    width: 73.95833vw;
-    border-bottom: 1px dotted #000;
-    padding-left: 3.90625vw;
-    padding: 5.20833vw 0;
+  .company .block .point_txt ul li:after {
+    position: absolute;
+    content: "";
+    border: 0.26042vw solid #10aad1;
+    border-radius: 100%;
+    width: 6.51042vw;
+    height: 6.51042vw;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .company .block .point_txt ul li:before {
+    content: counter(li);
+    font-size: 4.16667vw;
+    font-weight: normal;
+    line-height: 1;
+    color: #10aad1;
+    font-weight: 400;
+    left: 2.21354vw;
+    bottom: 0.52083vw;
+    position: absolute;
+  }
+  .company .block .point_txt ul li:not(:last-child) {
+    margin-bottom: 5.20833vw;
   }
   .sc_qa .main_ttl {
     width: 62.5vw !important;
